@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"> <span>Vinicius Gomes</span> </a>
+        <ul class="nav-links">
+            <li>
+                <a href="#About">Sobre</a>
+            </li>
+            <li>
+                <a href="#Experience">Experiencia</a>
+            </li>
+            <li>
+                <a href="#project">Projetos</a>
+            </li>
+            <li>
+                <a href="#contact">Contato</a>
+            </li>
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <button onclick="window.open('https://github.com/viniciusdiasgomes', '_blank')" class="visit-btn">Visit Git</button>
+    </header>
+
+    <section id="About" class="about">
+        <div class="about-container">
+            <img src="imagens/FOTO_PORTIFOLIO.jpeg" alt="">
+            <div class="info-box">
+                <div class="text">
+                    <h3>Olá, Me chamo</h3>
+                    <h2>Vinicius Gomes</h2>
+                    <span>Frontend Developer</span>
+                </div>
+
+                <div class="btn-group">
+                    <div class="btn">Dowload CV</div>
+                    <div class="btn">Contact</div>
+                </div>
+
+                <div class="Socials">
+                    <a href="https://github.com/viniciusdiasgomes" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+             
+                    <a href="https://www.linkedin.com/in/vinicius-dias-019859310/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- EXPERIENCIA -->
+    <section id="Experience" class="Experience">
+
+        <h2 class="section-title">Experiencia</h2>
+
+        <div class="Experience-info">
+            <div class="grid-card">
+                <div class="Weather-site">
+                    <i class="fa-solid fa-laptop"></i>
+                      <span>Website de Previsão do Tempo</span>
+                    <p> Desenvolvi um site de previsão do tempo onde os usuários podem inserir o nome de uma cidade ou país para visualizar as condições climáticas em tempo real <br>
+                        Tecnologias Usadas: HTML, CSS, JavaScript, API de Previsão do tempo utilizado foi OpenWeatherMap.</p>
+                </div>
+            </div>
+
+            <div class="grid-card">
+                <div class="Mata-Mosca">
+                    <i class="fa-solid fa-code"></i>
+                  <span>Jogo "Mata-Mosca" </span>
+                    <p> Desenvolvi um jogo simples e divertido onde o objetivo é clicar em moscas que aparecem na tela antes que elas escapem. O jogo possui três níveis de dificuldade: fácil, médio e difícil, que controlam a velocidade e o número de moscas.<br>
+                        Tecnologias Usadas: HTML, CSS, JavaScript.  </p>
+                </div>
+            </div>
+
+            <img src="imagens/FOTO_PORTIFOLIO.jpeg" alt="">
+        </div>
+    </section>
+
+     <!-- PROJETO -->
+    <section id="project" class="project">
+
+        <h2 class="section-title">Projetos recentes</h2>
+        <div class="project-grid">
+           
+            <div class="project-card">
+                <img src="imagens/tela_incio_jogo.jpeg" alt="">
+                <img src="imagens/tela_jogo_venceu.jpeg" alt="">
+                <h3>Jogo mata-mosca</h3>
+                <p>um projeto super divertido e desafiador! Trata-se de um jogo interativo desenvolvido com HTML, CSS e JavaScript, no qual o objetivo é eliminar moscas antes que o tempo acabe. <br>Esse projeto foi uma excelente oportunidade para trabalhar habilidades de programação front-end e lógica de jogo.</p>
+                <div class="btn-group">
+                    <div class="btn">Github</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="imagens/tela_app_weather.jpeg" alt="">
+                <img src="imagens/tela-weather2.jpeg" alt="">
+                <h3>Weather App</h3>
+                <p>uma aplicação web simples que fornece informações meteorológicas com base na localização inserida pelo usuário. Ela busca dados meteorológicos em tempo real, como temperatura, umidade e velocidade do vento, a partir de uma API de clima externa. O aplicativo tem uma interface limpa e minimalista, desenvolvida com HTML, CSS e JavaScript.<br>Esse projeto foi uma excelente oportunidade para trabalhar habilidades de programação front-end e lógica de jogo.</p>
+                <div class="btn-group">
+                    <div class="btn">Github</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="imagens/quiz_interativo_futebol.png" alt="">
+                <img src="imagens/quiz_interativo_futebol2.png" alt="">
+                <h3>Quiz interativo de futebol</h3>
+                <p>uma aplicação interativa e responsiva que permita aos usuários desafiar seus conhecimentos sobre futebol através de diferentes tipos de perguntas e formatos de resposta. <br> Funcões:Múltipla escolha
+                    Respostas em texto
+                    Perguntas de data
+                    Seleção múltipla e dropdown
+                    Pontuação e Avaliação:
+                    
+                    Tabela de pontuação com feedback direto baseado no desempenho do usuário.
+                    Verificação de respostas:</p>
+                <div class="btn-group">
+                    <div class="btn">Github</div>
+                </div>
+                </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="input-box">
+            <h2 class="section-title">Contata-me</h2>
+            
+            <div class="input">
+                <input type="text" disabled placeholder="vinidiasgomes2005@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+        
+            <!-- <div class="btn">Enviar</div> -->
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="#About">Sobre</a>
+            </li>
+
+            <li>
+                <a href="#Experience">Experiencia</a>
+            </li>
+
+            <li>
+                <a href="#project">Projetos</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contato</a>
+            </li>
+        </ul>
+
+    <p class="copyright">Todos os direitos reservados | Vinicius Gomes</p>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
