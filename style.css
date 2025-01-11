@@ -141,6 +141,7 @@ section{
     border-radius: 3rem;
     padding: 0.5rem 1.5rem;
     border: 2px solid black;
+    color: black;
     cursor: pointer;
     font-weight: 500;
     text-wrap: nowrap;
