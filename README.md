@@ -22,7 +22,7 @@ Informações sobre como entrar em contato comigo para oportunidades ou pergunta
 - **CSS3**: Estilo e layout  
 - **JavaScript**: Funcionalidades interativas  
 - **Font Awesome**: Ícones  
-- **API OpenWeatherMap**: Dados meteorológicos para o projeto de previsão do tempo  
+
 
 ## Funcionalidades  
 
@@ -42,9 +42,6 @@ Se você tiver dúvidas, sugestões ou oportunidades, sinta-se à vontade para m
 - **GitHub**: [github.com/viniciusdiasgomes](https://github.com/viniciusdiasgomes)  
 - **LinkedIn**: [linkedin.com/in/vinicius-dias-019859310](https://www.linkedin.com/in/vinicius-dias-019859310/)  
 
-## Licença  
-
-Este projeto está sob a licença MIT. Sinta-se livre para usar e modificar.  
 
 ---
 © 2025 Vinicius Gomes
