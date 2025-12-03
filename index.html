@@ -1,182 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio — Vinicius Gomes</title>
+
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
 
+    <!-- HEADER -->
     <header class="header">
-        <a href="#" class="logo"> <span>Vinicius Gomes</span> </a>
-        <ul class="nav-links">
-            <li>
-                <a href="#About">Sobre</a>
-            </li>
-            <li>
-                <a href="#Experience">Experiencia</a>
-            </li>
-            <li>
-                <a href="#project">Projetos</a>
-            </li>
-            <li>
-                <a href="#contact">Contato</a>
-            </li>
-        </ul>
+    <a href="#" class="logo">Vinicius Gomes</a>
 
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <ul class="nav-links" id="menu">
+        <li><a href="#About">Sobre</a></li>
+        <li><a href="#Experience">Experiência</a></li>
+        <li><a href="#Projects">Projetos</a></li>
+        <li><a href="#Contact">Contato</a></li>
+    </ul>
 
-        <button onclick="window.open('https://github.com/viniciusdiasgomes', '_blank')" class="visit-btn">Visit Git</button>
-    </header>
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+</header>
 
-    <section id="About" class="about">
+
+    <!-- HERO / ABOUT -->
+    <section id="About" class="about section">
         <div class="about-container">
-            <img src="imagens/FOTO_PORTIFOLIO.jpeg" alt="">
+            <img src="imagens/FOTO_PORTIFOLIO.jpeg" alt="Foto Vinicius">
+
             <div class="info-box">
-                <div class="text">
-                    <h3>Olá, Me chamo</h3>
-                    <h2>Vinicius Gomes</h2>
-                    <span>Frontend Developer</span>
-                </div>
+                <h3>Olá, eu sou</h3>
+                <h1 class="gradient-text">Vinicius Gomes</h1>
+                <p class="position">Frontend Developer</p>
 
                 <div class="btn-group">
-                    <a href="./assets/documents/CV.pdf" target="_blank" class="btn">Download CV</a>
-                    <a href="https://www.linkedin.com/in/vinicius-dias-019859310/" target="_blank" class="btn">Contato</a>
+                    <a href="assets/documents/CV_programacao.pdf" class="btn" target="_blank">Download CV</a>
+                    <a href="#Contact" class="btn">Contato</a>
                 </div>
 
-                <div class="Socials">
-                    <a href="https://github.com/viniciusdiasgomes" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-             
-                    <a href="https://www.linkedin.com/in/vinicius-dias-019859310/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
+                <div class="socials">
+                    <a href="https://github.com/viniciusdiasgomes" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/vinicius-dias-019859310/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-
             </div>
         </div>
     </section>
 
 
-    <!-- EXPERIENCIA -->
-    <section id="Experience" class="Experience">
+    <!-- EXPERIÊNCIA -->
+    <section id="Experience" class="section">
+        <h2 class="section-title gradient-text">Experiência</h2>
 
-        <h2 class="section-title">Experiencia</h2>
-
-        <div class="Experience-info">
+        <div class="grid">
             <div class="grid-card">
-                <div class="Weather-site">
-                    <i class="fa-solid fa-laptop"></i>
-                      <span>Website de Previsão do Tempo</span>
-                    <p> Desenvolvi um site de previsão do tempo onde os usuários podem inserir o nome de uma cidade ou país para visualizar as condições climáticas em tempo real <br>
-                        Tecnologias Usadas: HTML, CSS, JavaScript, API de Previsão do tempo utilizado foi OpenWeatherMap.</p>
-                </div>
+                <i class="fa-solid fa-globe"></i>
+                <h3>Site Institucional — Estrela Distribuição</h3>
+
+                <p>
+                    Desenvolvimento completo do site institucional oficial,
+                    com páginas como História, Responsabilidade Social, Parceiros,
+                    ExpoVar e muito mais.  
+                    Layout moderno, componentes reutilizáveis, responsividade total e
+                    integração com backend.  
+                    Deploy completo no servidor Apache (Ubuntu Server).
+                </p>
+
+                <p class="tech-title">Tecnologias:</p>
+                <p class="tech">HTML • CSS • JavaScript • React • Tailwind • Apache • Ubuntu</p>
             </div>
 
             <div class="grid-card">
-                <div class="Mata-Mosca">
-                    <i class="fa-solid fa-code"></i>
-                  <span>Jogo "Mata-Mosca" </span>
-                    <p> Desenvolvi um jogo simples e divertido onde o objetivo é clicar em moscas que aparecem na tela antes que elas escapem. O jogo possui três níveis de dificuldade: fácil, médio e difícil, que controlam a velocidade e o número de moscas.<br>
-                        Tecnologias Usadas: HTML, CSS, JavaScript.  </p>
-                </div>
-            </div>
+                <i class="fa-solid fa-tags"></i>
+                <h3>Portal de Ofertas — Produtos em Rebaixa</h3>
 
-            <img src="imagens/FOTO_PORTIFOLIO.jpeg" alt="">
+                <p>
+                    Sistema conectado ao banco Oracle (WinThor) exibindo automaticamente
+                    ofertas, filtros inteligentes, paginação, thumbnails, carregamento
+                    via rede interna e controle total de estoque.
+                </p>
+
+                <p class="tech-title">Tecnologias:</p>
+                <p class="tech">HTML • CSS • JS • React • Node.js • Express • OracleDB • Tailwind</p>
+            </div>
         </div>
     </section>
 
-     <!-- PROJETO -->
-    <section id="project" class="project">
 
-        <h2 class="section-title">Projetos recentes</h2>
+    <!-- PROJETOS -->
+    <section id="Projects" class="section">
+        <h2 class="section-title gradient-text">Projetos</h2>
+
         <div class="project-grid">
-           
-            <div class="project-card">
-                <img src="imagens/tela_incio_jogo.jpeg" alt="">
-                <img src="imagens/tela_jogo_venceu.jpeg" alt="">
-                <h3>Jogo mata-mosca</h3>
-                <p>um projeto super divertido e desafiador! Trata-se de um jogo interativo desenvolvido com HTML, CSS e JavaScript, no qual o objetivo é eliminar moscas antes que o tempo acabe. <br>Esse projeto foi uma excelente oportunidade para trabalhar habilidades de programação front-end e lógica de jogo.</p>
-                <div class="btn-group">
-                    <button onclick="window.open('https://github.com/viniciusdiasgomes/Ca-a_a_Mosca', '_blank')" class="btn">Github</button>
-                </div>
-            </div>
 
             <div class="project-card">
-                <img src="imagens/tela_app_weather.jpeg" alt="">
-                <img src="imagens/tela-weather2.jpeg" alt="">
-                <h3>Weather App</h3>
-                <p>uma aplicação web simples que fornece informações meteorológicas com base na localização inserida pelo usuário. Ela busca dados meteorológicos em tempo real, como temperatura, umidade e velocidade do vento, a partir de uma API de clima externa. O aplicativo tem uma interface limpa e minimalista, desenvolvida com HTML, CSS e JavaScript.<br>Esse projeto foi uma excelente oportunidade para trabalhar habilidades de programação front-end e lógica de jogo.</p>
-                <div class="btn-group">
-                    <button onclick="window.open('https://github.com/viniciusdiasgomes/weather_site', '_blank')" class="btn">Github</button>
-                </div>
-            </div>
+                <img src="imagens/keycap.png" alt="Keycap 3D">
 
-            <div class="project-card">
-                <img src="imagens/quiz_interativo_futebol.png" alt="">
-                <img src="imagens/quiz_interativo_futebol2.png" alt="">
-                <h3>Quiz interativo de futebol</h3>
-                <p>uma aplicação interativa e responsiva que permita aos usuários desafiar seus conhecimentos sobre futebol através de diferentes tipos de perguntas e formatos de resposta. <br> Funcões:Múltipla escolha
-                    Respostas em texto
-                    Perguntas de data
-                    Seleção múltipla e dropdown
-                    Pontuação e Avaliação:
-                    
-                    Tabela de pontuação com feedback direto baseado no desempenho do usuário.
-                    Verificação de respostas:</p>
-                <div class="btn-group">
-                  <button onclick="window.open('https://github.com/viniciusdiasgomes/Quiz_interativo_sobre_futebol', '_blank')" class="btn">Github</button>
-                </div>
-                </div>
-                </div>
+                <h3>Keycap 3D (em desenvolvimento)</h3>
 
+                <p>
+                    Visualização e manipulação de um modelo 3D realista no navegador usando
+                    Three.js, PBR, texturas, iluminação e integração com Prismic CMS.
+                </p>
 
+                <p class="tech-title">Tecnologias:</p>
+                <ul class="tech-list">
+                    <li>TypeScript / JavaScript</li>
+                    <li>Three.js (WebGL)</li>
+                    <li>Shaders PBR</li>
+                    <li>Modelos GLTF / OBJ</li>
+                    <li>Prismic CMS</li>
+                    <li>Vite</li>
+                </ul>
 
+                <button class="btn" onclick="window.open('https://github.com/viniciusdiasgomes/Keycap3d')">GitHub</button>
             </div>
 
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <div class="input-box">
-            <h2 class="section-title">Contata-me</h2>
-            
-            <div class="input">
-                <input type="text" disabled placeholder="vinidiasgomes2005@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-        
-            <!-- <div class="btn">Enviar</div> -->
+
+    <!-- CONTATO -->
+    <section id="Contact" class="section">
+        <h2 class="section-title gradient-text">Contato</h2>
+
+        <div class="contact-box">
+            <a href="mailto:vinidiasgomes2005@gmail.com">vinidiasgomes2005@gmail.com</a>
         </div>
     </section>
+
 
     <footer>
-        <ul>
-            <li>
-                <a href="#About">Sobre</a>
-            </li>
-
-            <li>
-                <a href="#Experience">Experiencia</a>
-            </li>
-
-            <li>
-                <a href="#project">Projetos</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contato</a>
-            </li>
-        </ul>
-
-    <p class="copyright">Todos os direitos reservados | Vinicius Gomes</p>
-</footer>
-
+        <p>© 2025 Vinicius Gomes — Todos os direitos reservados</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
